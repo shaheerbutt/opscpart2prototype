@@ -95,11 +95,13 @@
                 android:layout_margin="20dp"/>
 
             <ImageView
+                android:id="@+id/TimeS"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
+                android:layout_margin="20dp"
                 android:layout_marginEnd="16dp"
-                android:src="@drawable/cl"
-                android:layout_margin="20dp"/>
+                android:clickable="true"
+                android:src="@drawable/cl" />
 
             <ImageView
                 android:layout_width="80dp"

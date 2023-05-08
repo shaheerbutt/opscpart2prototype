@@ -1,8 +1,10 @@
 package com.example.opscpart2prototype
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import android.widget.ImageView
 import android.widget.Spinner
 
 class profile : AppCompatActivity() {
@@ -49,5 +51,12 @@ class profile : AppCompatActivity() {
 
         // Set the preferences spinner's adapter.
         preferencesSpinner.adapter = preferencesAdapter
+
+        val imageView: ImageView = findViewById(R.id.TimeS)
+
+        imageView.setOnClickListener {
+            val intent = Intent(this, newtask::class.java)
+            startActivity(intent)
+        }
     }
 }

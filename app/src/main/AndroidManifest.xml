@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Opscpart2prototype"
         tools:targetApi="31" >
         <activity
+            android:name=".newtask"
+            android:exported="false" />
+        <activity
             android:name=".profile"
             android:exported="false" />
         <activity
